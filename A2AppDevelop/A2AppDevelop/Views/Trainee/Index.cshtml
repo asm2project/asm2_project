@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Account
+        </th>
+        <th>
+            Age
+        </th>
+        <th>
+            Death of birth
+        </th>
+        <th>
+            Education
+        </th>
+        <th>
+            Main Language
+        </th>
+        <th>
+            TOEIC
+        </th>
+        <th>
+            Experience
+        </th>
+        <th>
+            Department
+        </th>
+        <th>
+            Location
+        </th>
+        <th>
+            Course
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TraineeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Account)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TraineeAge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Education)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MainLaguage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TOEC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExperienceDetail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course.CourseName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.TraineeID }, htmlAttributes: new { @class = "btn btn-danger col-md-3" })
+                @Html.ActionLink("Details", "Details", new { id = item.TraineeID }, htmlAttributes: new { @class = "btn btn-danger col-md-3" })
+                @Html.ActionLink("Delete", "Delete", new { id = item.TraineeID }, htmlAttributes: new { @class = "btn btn-danger col-md-3" })
+            </td>
+        </tr>
+    }
+
+</table>
