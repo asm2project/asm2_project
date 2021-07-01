@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home page</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+        /* Style the header */
+        .header {
+            overflow: hidden;
+            background-color: #d5d5d5;
+            margin: auto;
+            padding: 5px;
+        }
+
+        .header a {
+            float: left;
+            display: block;
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .header a:hover {
+            background-color: #d4ff53 ;
+            color: black;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: 16px, Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav h1 {
+            float: left;
+            padding: 14px 16px;
+            color: #fbf7f7;
+            font-size: 20px;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #bd9b9b;
+            color: black;
+        }
+
+        .topnav .search-container {
+            float: right;
+        }
+
+        .topnav .search-container button {
+            float: right;
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .topnav .search-container button:hover {
+          background: #ccc;
+        }
+
+        /* Style the content */
+        .content {
+            background-color: white;
+            padding: 10px;
+            
+        }
+
+        table, td, th {
+            border: 1px solid black;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <h1>Welcome Admin</h1>
+        <a href="#">Logout</a>
+    </div>
+
+    <div class="header">
+        <a href="#">Create account</a>
+        <div class="search-container">
+            <form action="">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="content">
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+            </tr>
+            <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+                <td>Peter</td>
+                <td>Griffin</td>
+                <td>Peter</td>
+                <td>Griffin</td>
+                <td>Peter</td>
+                <td>Griffin</td>
+            </tr>
+            <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+                <td>Lois</td>
+                <td>Griffin</td>
+                <td>Lois</td>
+                <td>Griffin</td>
+                <td>Lois</td>
+                <td>Griffin</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+
+</body>
+</html>
